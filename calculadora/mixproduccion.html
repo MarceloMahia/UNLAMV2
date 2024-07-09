@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado Productos</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor-halheader">
+            <div class="halfheader-logos">
+                <h2><a href="/index.html">Unlam</a></h2>
+            </div>
+            <div class ="halfheader-links">
+                <a href="perfil.html">Mi perfil</a>
+                <a href="configuraciones.html">Configuraciones</a>
+                <a href="cerrar_sesion.html">Cerrar sesión</a>
+            </div>    
+        </div>
+        <div class="menu-principal">
+            <a href="/abmproductos/listado.html">ABM</a>
+            <a href="/calculadora/mixproduccion.html">Calculadora</a>
+        </div> 
+    </header>
+    <main class="main-content">
+        <p>Contribucion Marginal(CMG): Es la diferencia entre precio y costo, es la utilidad generada por cada unidad vendida y es util para evaluar cuanto contribuye el producto a los gastos de estructura</p>
+        <p></p>
+        <h1>Lista de Productos</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Producto</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Costo</th>
+                    <th>Mercado</th>
+                    <th>Abastecimiento</th>
+                    <th>Productividad</th>
+                    <th>CMG</th>
+                    <th>MHC</th>
+                </tr>
+            </thead>
+            <tbody id="product-list">
+                <!-- Los productos se cargarán aquí -->
+            </tbody>
+        </table>
+    </main>
+    <footer class="footer">
+        <div>
+            <ul>
+                <li>UNLAM 2024</li>
+                <li><a href="/proyecto/aboutus.html">Acerca de Nosotros</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+   
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('/api/productos')
+                .then(response => response.json())
+                .then(data => {
+                    const productList = document.getElementById('product-list');
+                    data.forEach(product => {
+                        const productDiv = document.createElement('div');
+                        productDiv.classList.add('product');
+                        productDiv.innerHTML = `
+                            <h2>${product.nombre}</h2>
+                            <p>${product.descripcion}</p>
+                            <p>Precio: $${product.precio.toFixed(2)}</p>
+                            <p>Categoría: ${product.categoria}</p>
+                        `;
+                        productList.appendChild(productDiv);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error al cargar los productos:', error);
+                });
+        });
+    </script>
+</body>
+</html>
