@@ -26,99 +26,103 @@
     </header>
     <main class="main-content">
         <h1>Lista de Productos</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Precio</th>
-                    <th>Costo</th>
-                    <th>Mercado</th>
-                    <th>Abastecimiento</th>
-                    <th>Productividad</th>
-                    <th>CMG</th>
-                    <th>MHC</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody id="product-list">
-                <tr>
-                    <td>1</td>
-                    <td>Producto A</td>
-                    <td>$100.00</td>
-                    <td>$50.00</td>
-                    <td>200 unidades</td>
-                    <td>150 unidades</td>
-                    <td>5</td>
-                    <td>$50.00</td>
-                    <td>$250.00</td>
-                    <td>
-                        <a href="listadoproductos/edit/1"><i class="fas fa-pencil-alt"></i></a>
-                        <a href="listadoproductos/delete/1"><i class="fas fa-trash-alt"></i></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Producto B</td>
-                    <td>$200.00</td>
-                    <td>$100.00</td>
-                    <td>300 unidades</td>
-                    <td>250 unidades</td>
-                    <td>4</td>
-                    <td>$100.00</td>
-                    <td>$400.00</td>
-                    <td>
-                        <a href="listadoproductos/edit/2"><i class="fas fa-pencil-alt"></i></a>
-                        <a href="listadoproductos/delete/2"><i class="fas fa-trash-alt"></i></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Producto C</td>
-                    <td>$150.00</td>
-                    <td>$70.00</td>
-                    <td>150 unidades</td>
-                    <td>100 unidades</td>
-                    <td>3</td>
-                    <td>$80.00</td>
-                    <td>$240.00</td>
-                    <td>
-                        <a href="listadoproductos/edit/3"><i class="fas fa-pencil-alt"></i></a>
-                        <a href="listadoproductos/delete/3"><i class="fas fa-trash-alt"></i></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Producto D</td>
-                    <td>$300.00</td>
-                    <td>$150.00</td>
-                    <td>400 unidades</td>
-                    <td>350 unidades</td>
-                    <td>2</td>
-                    <td>$150.00</td>
-                    <td>$300.00</td>
-                    <td>
-                        <a href="listadoproductos/edit/4"><i class="fas fa-pencil-alt"></i></a>
-                        <a href="listadoproductos/delete/4"><i class="fas fa-trash-alt"></i></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Producto E</td>
-                    <td>$250.00</td>
-                    <td>$120.00</td>
-                    <td>250 unidades</td>
-                    <td>200 unidades</td>
-                    <td>1</td>
-                    <td>$130.00</td>
-                    <td>$130.00</td>
-                    <td>
-                        <a href="listadoproductos/edit/5"><i class="fas fa-pencil-alt"></i></a>
-                        <a href="listadoproductos/delete/5"><i class="fas fa-trash-alt"></i></a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-container">
+
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Costo</th>
+                        <th>Mercado</th>
+                        <th>Abastecimiento</th>
+                        <th>Productividad</th>
+                        <th>CMG</th>
+                        <th>MHC</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="product-list">
+                    <tr>
+                        <td>1</td>
+                        <td>Producto A</td>
+                        <td>$100.00</td>
+                        <td>$50.00</td>
+                        <td>200 unidades</td>
+                        <td>150 unidades</td>
+                        <td>5</td>
+                        <td>$50.00</td>
+                        <td>$250.00</td>
+                        <td>
+                            <a href="listadoproductos/editar/1"><i class="fas fa-pencil-alt"></i></a>
+                            <a href="listadoproductos/borrar/1"><i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Producto B</td>
+                        <td>$200.00</td>
+                        <td>$100.00</td>
+                        <td>300 unidades</td>
+                        <td>250 unidades</td>
+                        <td>4</td>
+                        <td>$100.00</td>
+                        <td>$400.00</td>
+                        <td>
+                            <a href="listadoproductos/edit/2"><i class="fas fa-pencil-alt"></i></a>
+                            <a href="listadoproductos/delete/2"><i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Producto C</td>
+                        <td>$150.00</td>
+                        <td>$70.00</td>
+                        <td>150 unidades</td>
+                        <td>100 unidades</td>
+                        <td>3</td>
+                        <td>$80.00</td>
+                        <td>$240.00</td>
+                        <td>
+                            <a href="listadoproductos/edit/3"><i class="fas fa-pencil-alt"></i></a>
+                            <a href="listadoproductos/delete/3"><i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Producto D</td>
+                        <td>$300.00</td>
+                        <td>$150.00</td>
+                        <td>400 unidades</td>
+                        <td>350 unidades</td>
+                        <td>2</td>
+                        <td>$150.00</td>
+                        <td>$300.00</td>
+                        <td>
+                            <a href="listadoproductos/edit/4"><i class="fas fa-pencil-alt"></i></a>
+                            <a href="listadoproductos/delete/4"><i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Producto E</td>
+                        <td>$250.00</td>
+                        <td>$120.00</td>
+                        <td>250 unidades</td>
+                        <td>200 unidades</td>
+                        <td>1</td>
+                        <td>$130.00</td>
+                        <td>$130.00</td>
+                        <td>
+                            <a href="listadoproductos/edit/5"><i class="fas fa-pencil-alt"></i></a>
+                            <a href="listadoproductos/delete/5"><i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
     <footer class="footer">
         <div>

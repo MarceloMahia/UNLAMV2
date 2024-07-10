@@ -104,6 +104,26 @@
     background-color: #0056b3;
 }
 
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px 12px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
 footer{
     border-radius:2px;
     background-color: var(--footer);
@@ -124,6 +144,10 @@ footer{
     .halfheader-links{
         font-size: 10px;
     }
+
+    th,td {
+        font-size: 10px;
+    }
 }
 
 @media screen and (min-width: 460px) {
@@ -131,3 +155,8 @@ footer{
 }
 
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .main-content table{
+        width: 100%;
+    }
+}
