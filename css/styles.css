@@ -6,11 +6,14 @@
 }
 
 :root {
-    --half-logo: #3498db;
-    --half-options: #2ecc71;
+    /*background colours*/
+    --header: rgb(0,102,51);
+    --body-colour: rgb(155, 223, 240);
     --button-colour:  #007BFF;
     --footer: #007BFF;
-    --body-colour: rgb(155, 223, 240);
+
+    /*font config*/
+
     --font-size-base: 16px;
 }
 
@@ -23,12 +26,14 @@
 
 .contenedor-halheader{
     display: flex;
+    background-color: var(--header);
 }
 
 .halfheader-logos, .halfheader-links {
     padding: 10px;
     display: flex;
     align-items: center;
+    color: w;
 }
 
 .halfheader-logos {
@@ -36,7 +41,6 @@
     color: white;
     width: 50%;
     justify-content: flex-start;
-    
 }
 
 .halfheader-links {
@@ -141,6 +145,9 @@ footer{
 
     }
     .halfheader-links{
+        font-size: 8px;
+    }
+    .main-content{
         font-size: 8px;
     }
 
