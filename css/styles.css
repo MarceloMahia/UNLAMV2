@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    background: linear-gradient(to right, --var(--body-colour1), --var(--body-colour2));
 }
 
 :root {
     /*background colours*/
     --header: rgb(0,102,51);
     --body-colour: rgb(155, 223, 240);
+    --body-colour2: rgb(97,202,96);
     --button-colour:  #007BFF;
     --footer: #007BFF;
 
@@ -42,15 +44,15 @@
     width: 50%;
     justify-content: flex-start;
 }
+.halfheader-logos a {
+    border-radius: 1px;
+    border-color: white;
+}
 
 .halfheader-links {
     background-color: var(--half-options);
     justify-content: flex-end;
     width: 50%;
-}
-
-.halfheader-logos{
-    color: white;
 }
 
 .halfheader-links a {
